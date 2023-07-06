@@ -1,6 +1,6 @@
 package net.onlinenotepad.stepdefinitions;
 
-import io.cucumber.java.Before;
+import cucumber.api.java.Before;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
