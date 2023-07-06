@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import utils.GetDriver;
 
 import static net.onlinenotepad.stepdefinitions.setup.userNote;
 
@@ -19,7 +20,7 @@ public class stepDefs {
 
     @Given("^el usuario ingresa al home de la aplicacion bloc de notas online$")
     public void el_usuario_ingresa_al_home_de_la_aplicacion_bloc_de_notas_online() {
-        userNote.can(BrowseTheWeb.with(MyWebDriverFactory.web().onPage()));
+        userNote.can(BrowseTheWeb.with(GetDriver.web().onPage("https://www.online-notepad.net/es/bloc-de-notas-online")));
     }
 
     @When("^ingresa el siguiente texto enriquecido \"([^\"]*)\" con titulo \"Nota Testing$")
