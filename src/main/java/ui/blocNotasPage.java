@@ -16,7 +16,7 @@ public class blocNotasPage {
             .located(By.id("richtextnote-tab"));
 
     public static final Target BTN_SAVE = Target.the("Boton para guardar nota")
-            .locatedBy("//button[contains(@class, 'saveNotesBtn') and contains(text(), 'Save')]");
+            .locatedBy("//button[contains(@class, 'saveNotesBtn') and contains(text(), 'Ahorrar')]");
 
 
 
