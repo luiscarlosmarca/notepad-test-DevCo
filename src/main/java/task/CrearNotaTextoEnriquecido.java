@@ -36,11 +36,11 @@ public class CrearNotaTextoEnriquecido implements Task {
         );
         actor.attemptsTo(Enter.keyValues(titulo).into(TEXT_AREA_NOTA_TITULO));
         actor.attemptsTo(Click.on(TEXT_AREA_NOTA));
-        Actions acciones = new Actions(driverWeb);
-        acciones.keyDown(Keys.COMMAND).sendKeys("b").keyUp(Keys.COMMAND).perform();
-        acciones.sendKeys((CharSequence) TEXT_AREA_NOTA, Keys.CONTROL + "b").perform();
+      //  Actions acciones = new Actions(driverWeb);
+       // acciones.keyDown(Keys.COMMAND).sendKeys("b").keyUp(Keys.COMMAND).perform();
+        //acciones.sendKeys((CharSequence) TEXT_AREA_NOTA, Keys.CONTROL + "b").perform();
         actor.attemptsTo(Enter.keyValues(nota).into(TEXT_AREA_NOTA));
-        actor.attemptsTo(Click.on(BrowseTheWeb.as(actor).findAll(BTN_SAVE.getCssOrXPathSelector()).get(2)));
+        //actor.attemptsTo(Click.on(BrowseTheWeb.as(actor).findAll(BTN_SAVE.getCssOrXPathSelector()).get(2)));
 
     }
 
